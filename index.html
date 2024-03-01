@@ -1,0 +1,99 @@
+<!-- The provided code is an HTML document structure for a weather application. Here's a breakdown of
+what each part of the code does: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://kit.fontawesome.com/61c36d9117.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="search-box">
+            <input type="text" placeholder="Enter your location" class="input-box" value="Roorkee">
+
+            <button  id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="location-not-found">
+            <div id="main">
+                <div class="fof">
+                        <h1>Error 404</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini-container">
+            <h1 class="city"></h1><br><br>
+            <h3 class="countryCode" placeholder="country Code"></h3>
+            <h3 class="date-time"></h3>
+        </div>
+
+        <div class="weather-body">
+            <img src="" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature"> </p>
+                <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                
+                <div class="air-quality wind">
+                    <i class="">AQI</i>
+                    <div class="text">
+                        <span id="air-quality">0</span>
+                        <p>Air Quality</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+
+                <div class="visiblity wind">
+                    <i class="fa-solid fa-eye"></i>
+                    <div class="text">
+                        <span id="visible">12Km/H</span>
+                        <p>visiblity</p>
+                    </div>
+                </div>
+
+                <div class="uv wind">
+                    <i class="fa-solid fa-sun"></i>
+                    <div class="text">
+                        <span id="uv"></span>
+                        <p>UV index</p>
+                    </div>
+                </div>
+
+                <div class="wind-dir wind">
+                    <i class="fa-solid fa-compass"></i>
+                    <div class="text">
+                        <span id="wind-dir"></span>
+                        <p>Wind Driecion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
